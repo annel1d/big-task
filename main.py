@@ -25,7 +25,6 @@ def fun():
         file.write(response.content)
     screen.blit(pygame.image.load(map_file), (0, 0))
 
-
 pygame.init()
 screen = pygame.display.set_mode((600, 450))
 fun()
