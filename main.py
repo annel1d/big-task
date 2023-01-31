@@ -38,6 +38,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         if event.type == pygame.KEYDOWN:
+
             if event.key == pygame.K_PAGEUP:
                 if first_scale >= 10.0 and first_scale >= 10.0:
                     first_scale -= 5.0
@@ -51,6 +52,37 @@ while running:
                     second_scale += 5.0
                     print(first_scale, second_scale)
                     fun()
+
+            ####################################
+
+            if event.key == pygame.K_UP:
+                if 85.0 > second_coord >= -85.0:
+                    second_coord += 1.0
+                    print(second_coord)
+                    fun()
+
+            if event.key == pygame.K_DOWN:
+                if 85.0 >= second_coord > -85.0:
+                    second_coord -= 1.0
+                    print(second_coord)
+                    fun()
+
+            ######################################
+
+            if event.key == pygame.K_RIGHT:
+                if 175.0 > first_coord >= -175.0:
+                    first_coord += 1.0
+                    print(first_coord)
+                    fun()
+
+            if event.key == pygame.K_LEFT:
+                if 175.0 >= first_coord > -175.0:
+                    first_coord -= 1.0
+                    print(first_coord)
+                    fun()
+
+            ######################################
+
     pygame.display.flip()
 
 pygame.quit()
