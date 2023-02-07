@@ -130,7 +130,7 @@ while running:
                     fun()
 
             if event.key == pygame.K_PAGEUP:
-                if z < 13:
+                if z < 19:
                     z += 1
                     print(z)
                     fun()
